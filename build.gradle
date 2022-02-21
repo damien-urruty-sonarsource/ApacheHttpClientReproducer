@@ -1,0 +1,22 @@
+plugins {
+    id 'application'
+}
+
+group 'org.example'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation("org.apache.httpcomponents.client5:httpclient5:5.1.2")
+}
+
+test {
+    useJUnitPlatform()
+}
+
+application {
+    mainClass = 'Main'
+}
